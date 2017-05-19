@@ -5,8 +5,6 @@ services:
       JENKINS_USERNAME: jenkins
       JENKINS_PASSWORD: jenkins
       JENKINS_MASTER: http://jenkins-master:8080
-    labels:
-      io.rancher.scheduler.affinity:host_label: provider=aws
     tty: true
     image: rancher/jenkins-slave
     links:
@@ -17,8 +15,6 @@ services:
     stdin_open: true
   jenkins-master:
     restart: 'no'
-    labels:
-      io.rancher.scheduler.affinity:host_label: provider=aws
     tty: true
     image: rancher/jenkins-master
     privileged: true
