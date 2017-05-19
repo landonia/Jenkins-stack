@@ -1,0 +1,13 @@
+.catalog:
+  name: "Jenkins Cluster"
+  version: "v1.0"
+  description: "Jenkins cluster build stack"
+  uuid: jenkins-cluster-stack-0
+jenkins-slave:
+  scale: 1
+jenkins-master:
+  scale: 1
+jenkins-lb:
+  scale: 1
+  load_balancer_config:
+    name: jenkins-lb config

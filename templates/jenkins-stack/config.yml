@@ -1,0 +1,4 @@
+name: "Jenkins Cluster (DiD)"
+description: "Create a Jenkins continuous build cluster with docker in docker"
+version: "v1.0"
+category: "Build services"
